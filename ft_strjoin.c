@@ -6,7 +6,7 @@
 /*   By: macbookair <macbookair@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/03 21:46:20 by macbookair        #+#    #+#             */
-/*   Updated: 2024/11/03 21:46:21 by macbookair       ###   ########.fr       */
+/*   Updated: 2024/11/06 18:46:19 by macbookair       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ char *ft_strjoin(char const *s1, char const *s2)
     return str;
 }
 
-int main(int argc, char const *argv[])
-{
-    char iman[] = "iman";
-    char iqor[] = "iqor";
-    printf("%s",ft_strjoin("\0kvmno\0", ""));
-    return 0;
-}
+// int main(int argc, char const *argv[])
+// {
+//     char iman[] = "iman";
+//     char iqor[] = "iqor";
+//     printf("%s",ft_strjoin("\0kvmno\0", ""));
+//     return 0;
+// }

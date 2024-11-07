@@ -6,7 +6,7 @@
 /*   By: macbookair <macbookair@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 21:07:52 by macbookair        #+#    #+#             */
-/*   Updated: 2024/11/04 18:05:38 by macbookair       ###   ########.fr       */
+/*   Updated: 2024/11/07 03:21:18 by macbookair       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
+#include<fcntl.h>
+
 
 /* Mandatory part */
 
@@ -49,6 +51,8 @@ char **ft_split(char const *str, char c);
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int ft_isprint(int c);
 char *ft_itoa(int n);
-
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void ft_striteri(char *s, void (*f)(unsigned int,char*));
+void ft_putchar_fd(char c, int fd);
 
 #endif

@@ -6,13 +6,12 @@
 /*   By: macbookair <macbookair@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 19:21:16 by macbookair        #+#    #+#             */
-/*   Updated: 2024/10/25 15:13:59 by macbookair       ###   ########.fr       */
+/*   Updated: 2024/11/06 18:48:15 by macbookair       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
-#include<stdio.h>
 
 int ft_toupper(int c) {
     if (c >= 'a' && c <= 'z') {
@@ -20,9 +19,7 @@ int ft_toupper(int c) {
     }
     return c; 
 }
-int f(int x,int (*ft_toupper)()){
-	return ft_toupper(x);
-}
+
 /*
 int main() {
     char lower = 'b';
