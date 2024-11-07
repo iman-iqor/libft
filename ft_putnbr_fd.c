@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: imiqor <imiqor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/07 17:06:46 by imiqor            #+#    #+#             */
-/*   Updated: 2024/11/07 18:17:31 by imiqor           ###   ########.fr       */
+/*   Created: 2024/11/07 18:18:10 by imiqor            #+#    #+#             */
+/*   Updated: 2024/11/07 20:12:59 by imiqor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
-void ft_putendl_fd(char *s, int fd)
+#include "libft.h"
+
+void	ft_putnbr_fd(int n, int fd)
 {
-    if(!s)
-        return;
-    size_t len;
-    len = ft_strlen(s);
-    size_t i ;
-    i = 0;
-    while(i < len)
-    {
-        ft_putchar_fd(s[i], fd);
-        i++;
-    }
+	unsigned int	nb;
 
-    ft_putchar_fd('\n',fd);
+	nb = n;
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		nb *= -1;
+	}
+	if (nb < 10)
+		ft_putchar_fd(nb + '0', fd);
+	else
+	{
+		ft_putnbr_fd(nb / 10, fd);
+		ft_putnbr_fd(nb % 10, fd);
+	}
 }
-
-// int main()
-// {
-//     int fd = open("iman.txt",O_WRONLY |O_CREAT,777);
-//     ft_putendl_fd("IMANIQOR",fd);
-//     close(fd);
-// }

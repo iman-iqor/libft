@@ -6,7 +6,7 @@
 /*   By: imiqor <imiqor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 15:01:04 by imiqor            #+#    #+#             */
-/*   Updated: 2024/11/07 17:05:03 by imiqor           ###   ########.fr       */
+/*   Updated: 2024/11/07 18:17:42 by imiqor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,12 @@ void ft_putstr_fd(char *s, int fd)
         ft_putchar_fd(s[i], fd);
         i++;
     }
-    s[i] = 0;
+
 }
-int main()
-{
-    int fd = open("iman.txt",O_WRONLY | O_CREAT,777);
-    char iman[] = "iman";
-    ft_putstr_fd(iman,fd);
-    printf("%s\n","wsal hna");
-}
+// int main()
+// {
+//     int fd = open("iman.txt",O_WRONLY | O_CREAT,777);
+//     char iman[] = "iman";
+//     ft_putstr_fd(iman,fd);
+//     printf("%s\n","wsal hna");
+// }
