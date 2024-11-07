@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbookair <macbookair@student.42.fr>      +#+  +:+       +#+        */
+/*   By: imiqor <imiqor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 21:07:52 by macbookair        #+#    #+#             */
-/*   Updated: 2024/11/07 03:21:18 by macbookair       ###   ########.fr       */
+/*   Updated: 2024/11/07 15:12:48 by imiqor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,6 @@ char *ft_itoa(int n);
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void ft_striteri(char *s, void (*f)(unsigned int,char*));
 void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
 
 #endif

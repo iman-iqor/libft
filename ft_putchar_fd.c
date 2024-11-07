@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbookair <macbookair@student.42.fr>      +#+  +:+       +#+        */
+/*   By: imiqor <imiqor@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 23:09:45 by macbookair        #+#    #+#             */
-/*   Updated: 2024/11/07 03:27:37 by macbookair       ###   ########.fr       */
+/*   Updated: 2024/11/07 15:25:24 by imiqor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,23 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
-int main()
-{
-    int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    if (fd < 0) 
-    {
-        printf("%s","error");
-        return 1;
-    }
+// int main()
+// {
+//     int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+//     if (fd < 0) 
+//     {
+//         printf("%s","error");
+//         return 1;
+//     }
 
-    // Writing to the file
-    ft_putchar_fd('A', fd);  
+//     // Writing to the file
+//     ft_putchar_fd('A', fd);  
 
-    // Close the file descriptor
-    close(fd);
-    ft_putchar_fd('B', -1);
-    ft_putchar_fd('C', fd);
-}
+//     // Close the file descriptor
+//     close(fd);
+//     ft_putchar_fd('B', -1);
+//     ft_putchar_fd('C', fd);
+// }
 
 
 
